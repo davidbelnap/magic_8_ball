@@ -36,7 +36,7 @@ require "colorize"
 	"Wait. You're kidding, right?",
 	"Um... Yes.",
 	"Well yeah.",
-	"Sure."
+	"Sure.",
 	"I'll have to think about it."
 	]
 
@@ -55,6 +55,8 @@ def question
 			exit
 		when "add_answer"
 			new_answer_shovel
+		when "print_answers"
+			print_answers
 		else
 			answer
 	end
@@ -69,6 +71,14 @@ def new_answer_shovel
 				@answer << new_answer
 				question
 			end
+end
+
+def print_answers
+	puts "Fine. This is everything I know."
+	puts " "
+	puts @answer
+	puts " "
+	question
 end
 
 def answer
