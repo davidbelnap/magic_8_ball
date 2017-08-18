@@ -4,7 +4,7 @@
 # | |\ \ / /| |    \   /
 # | | \ V / | |    /   \
 # | |  \_/  | |   |  O  |
-# |_|       |_|    \___/
+# |_|       |_|agic\___/Ball
 
 
 require "pry"
@@ -19,13 +19,13 @@ require "colorize"
 	"I'm not sure.",
 	"I don't think so.",
 	"It depends...",
-	"Did you know 15 minutes could save you 15 percent or more on car insurance?",
+	"Did you know that 15 minutes could save you 15 percent or more on car insurance?",
 	"That's not a question you should be asking me.",
 	"Don't you have to be somewhere?",
 	"Who sent you?",
 	"Irrelevant.",
 	"Loading...",
-	"Please hold while we fax your request to the Great Wizard.",
+	"Please hold while we fax your request to the Director of Prophecy.",
 	"You may be hoping I say yes... but no.",
 	"Are you kidding? Haha!",
 	"Not a chance.",
@@ -37,6 +37,7 @@ require "colorize"
 	"Um... Yes.",
 	"Well yeah.",
 	"Sure."
+	"I'll have to think about it."
 	]
 
 
