@@ -65,16 +65,21 @@ end
 def new_answer_shovel
 	new_answer = gets.strip
 			if @answer.include?(new_answer)
-				puts "Please enter a different answer."
+				puts " "
+				puts "Please enter a different answer.".colorize(:red)
+				puts " "
 				new_answer_shovel
 			else
 				@answer << new_answer
+				puts " "
+				puts "Answer recorded.".colorize(:cyan)
 				question
 			end
 end
 
 def print_answers
-	puts "Fine. This is everything I know."
+	puts " "
+	puts "Fine. This is everything I know.".colorize(:cyan)
 	puts " "
 	puts @answer
 	puts " "
@@ -85,7 +90,6 @@ def answer
 	puts "++++++++++++++++++++++++++++++++++++++".colorize(:yellow)
 	puts @answer.sample.colorize(:red)
 	puts "++++++++++++++++++++++++++++++++++++++".colorize(:yellow)
-	puts " "
 	puts " "
 	question
 end
